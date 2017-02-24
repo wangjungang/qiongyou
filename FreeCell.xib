@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="KGk-i7-Jjw" customClass="FreeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5pm-7m-KBQ">
+                        <rect key="frame" x="0.0" y="10" width="320" height="55"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="超值自由行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryv-5G-28I">
+                                <rect key="frame" x="15" y="19" width="88" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="DfR-KI-VwA"/>
+                                    <constraint firstAttribute="width" constant="88" id="KaR-0Y-n3y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查看全部" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JLc-n0-MQU">
+                                <rect key="frame" x="231" y="19" width="61" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="6jt-WZ-i82"/>
+                                    <constraint firstAttribute="width" constant="61" id="Se3-Na-388"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="右右" translatesAutoresizingMaskIntoConstraints="NO" id="xP1-T1-InN">
+                                <rect key="frame" x="288" y="21" width="17" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="CJs-Rp-tFZ"/>
+                                    <constraint firstAttribute="width" constant="17" id="dgr-J0-rsM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xP1-T1-InN" firstAttribute="top" secondItem="5pm-7m-KBQ" secondAttribute="top" constant="21" id="B2o-px-JmR"/>
+                            <constraint firstAttribute="trailing" secondItem="xP1-T1-InN" secondAttribute="trailing" constant="15" id="Mch-cg-lGV"/>
+                            <constraint firstItem="ryv-5G-28I" firstAttribute="leading" secondItem="5pm-7m-KBQ" secondAttribute="leading" constant="15" id="ajs-yV-JId"/>
+                            <constraint firstItem="ryv-5G-28I" firstAttribute="top" secondItem="5pm-7m-KBQ" secondAttribute="top" constant="19" id="cFk-Lm-yAw"/>
+                            <constraint firstAttribute="trailing" secondItem="JLc-n0-MQU" secondAttribute="trailing" constant="28" id="iLx-VK-6Ej"/>
+                            <constraint firstItem="JLc-n0-MQU" firstAttribute="top" secondItem="5pm-7m-KBQ" secondAttribute="top" constant="19" id="rOt-oF-opm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5pm-7m-KBQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="9RR-jb-FVD"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="5pm-7m-KBQ" secondAttribute="bottom" constant="-10" id="ASU-Tn-4Bd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="5pm-7m-KBQ" secondAttribute="trailing" constant="-8" id="ES0-jl-KuN"/>
+                    <constraint firstItem="5pm-7m-KBQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="UJQ-rP-qo8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="497" y="529"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="右右" width="64" height="64"/>
+    </resources>
+</document>
